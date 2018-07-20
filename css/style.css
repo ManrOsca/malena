@@ -1,0 +1,92 @@
+html,
+body,
+header,
+#intro {
+    background-color: #f7f7f7;
+}
+
+div img {
+    width:100%;
+}
+#intro {
+    background: url("../img/BC_Home.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+footer.page-footer {
+    bottom: 0;
+    color: #565656;
+    background-color: #f7f7f7;
+}
+.greyer {
+    color:#000 ;
+    font-weight: 500;
+}
+footer.page-footer a {
+    color: #565656;
+
+}
+span.greyer a {
+    color: #000;
+    font-weight: 500;
+}
+
+.elena {
+	font-family: 'Merriweather', serif;
+	letter-spacing: 4px;
+	font-size: 30px;
+	color:darkblue;
+	padding-left: 60px;
+}
+
+.navbar-dark .navbar-brand {
+    color: #565656;
+}
+
+.carousel .carousel-item img {
+  max-height: 457px;
+  min-width: auto;
+}
+
+.grey.lighten-4 {
+    background-color: #f7f7f7!important;
+}
+.bodyText {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: grey;
+	font-size: 12px;
+}
+
+.anchor{
+   display:block;
+   height:104px; /* this is the height of the header */
+   margin-top:-104px; /* this is again negative value of the height of the header 
+   visibility:hidden;
+}
+.menuText {
+	font-family: 'Roboto Condensed', sans-serif;
+	color: grey;
+	font-size: 16px;
+	font-weight:600;
+}
+.paragraph {
+	padding: 30px;
+}
+
+.navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+	color: #636363;
+}
+body {
+/*	background-color: #fff;*/
+	color: #565656!important;
+}
+.header2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+ul li a {
+    color: #565656;
+}
