@@ -1,36 +1,58 @@
 html,
-body,
-header,
-#intro {
-    background-color: #f7f7f7;
+body {
+    background-color: #fff;
+	padding:0 50px;
+}
+
+ header.fixed-top {
+	background-color:#fff;
+	padding: 0 100px;
+} 
+
+.navbar.navbar-default {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar.navbar-default .navbar-collapse {
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar {
+    box-shadow:none; 
+}
+
+.left {
+	text-align:left;
+}
+.centre {
+	text-align:left;
+}
+.right {
+	text-align:left;
 }
 
 div img {
     width:100%;
 }
-#intro {
-    background: url("../img/BC_Home.jpg") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 
 footer.page-footer {
     bottom: 0;
-    color: #565656;
-    background-color: #f7f7f7;
+    color: #999;
+    background-color: #fff;
+}
+footer.page-footer a {
+    color: #999;
 }
 .greyer {
     color:#000 ;
     font-weight: 500;
 }
-footer.page-footer a {
-    color: #565656;
 
-}
 span.greyer a {
-    color: #000;
+    color: #333;
     font-weight: 500;
 }
 
@@ -52,12 +74,18 @@ span.greyer a {
 }
 
 .grey.lighten-4 {
-    background-color: #f7f7f7!important;
+    background-color: #fff!important;
 }
 .bodyText {
 	font-family: 'Roboto Condensed', sans-serif;
 	color: grey;
 	font-size: 12px;
+}
+
+
+.centrePad{
+    width: 60%;
+    margin: auto;
 }
 
 .anchor{
@@ -81,7 +109,7 @@ span.greyer a {
 }
 body {
 /*	background-color: #fff;*/
-	color: #565656!important;
+	color: #666!important;
 }
 .header2 {
     font-size: 20px;
@@ -90,3 +118,59 @@ body {
 ul li a {
     color: #565656;
 }
+
+@media (min-width: 767px) { 
+	.left {
+	text-align:left;
+	}
+	.centre {
+	text-align:center;
+	}
+	.right {
+	text-align:right;
+	}
+
+
+	
+}
+
+/* To change the next/previous icons */
+/*
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: red;
+}
+*/
+/*
+.elenCar {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-control.prev {
+  margin-left: -25px;
+}
+
+.carousel-control.next {
+  margin-right: -25px;
+}
+*/
