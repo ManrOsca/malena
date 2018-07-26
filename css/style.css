@@ -1,12 +1,10 @@
 html,
 body {
     background-color: #fff;
-	padding:0 50px;
 }
 
  header.fixed-top {
 	background-color:#fff;
-	padding: 0 100px;
 } 
 
 .navbar.navbar-default {
@@ -22,6 +20,7 @@ body {
 }
 .navbar {
     box-shadow:none; 
+	padding:0;
 }
 
 .left {
@@ -84,16 +83,20 @@ span.greyer a {
 
 
 .centrePad{
-    width: 60%;
     margin: auto;
 }
 
 .anchor{
    display:block;
-   height:104px; /* this is the height of the header */
-   margin-top:-104px; /* this is again negative value of the height of the header 
-   visibility:hidden;
+   height:154px; /* this is the height of the header */
+   margin-top:-40px; /* this is again negative value of the height of the header 
+   visibility:hidden; */
 }
+.adjustPad {
+	padding: 30px;
+}
+
+
 .menuText {
 	font-family: 'Roboto Condensed', sans-serif;
 	color: grey;
@@ -129,10 +132,40 @@ ul li a {
 	.right {
 	text-align:right;
 	}
+	html,
+	body {
+	padding:0 50px;
+	}
+	header.fixed-top {
+	padding: 0 100px;
+	}
+	.navbar {
+	padding: .5rem 1rem;
+	}
+	.anchor{
+	display:block;
+	height:104px; /* this is the height of the header */
+	margin-top:-104px; /* this is again negative value of the height of the header 
+	visibility:hidden;  */
+	}
+	.adjustPad {
+	padding: 0;
+	}
+	.centrePad{
+    width: 60%;
+	}
 
 
-	
+
+
 }
+
+
+
+
+
+
+
 
 /* To change the next/previous icons */
 /*
