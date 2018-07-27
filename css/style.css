@@ -68,7 +68,7 @@ span.greyer a {
 }
 
 .carousel .carousel-item img {
-  max-height: 457px;
+/*   min-height: 457px; */
   min-width: auto;
 }
 
@@ -93,8 +93,14 @@ span.greyer a {
    visibility:hidden; */
 }
 .adjustPad {
-	padding: 30px;
+	padding: 104px 30px 30px 30px;;
+	height : 464px;
+	width:auto;
 }
+
+	.padTop {
+	padding-top:0;
+	}
 
 
 .menuText {
@@ -154,8 +160,13 @@ ul li a {
 	.centrePad{
     width: 60%;
 	}
-
-
+	.padTop {
+	padding-top:104px;
+	}
+	.carousel .carousel-item img {
+	min-height: 457px; 
+	min-width: auto;
+	}
 
 
 }
