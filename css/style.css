@@ -63,13 +63,17 @@ span.greyer a {
 	padding-left: 60px;
 } */
 .elena {
-	font-family: 'CutiveMono-Regular', serif;
-	letter-spacing: 4px;
-	font-size: 30px;
+	font-family: 'Cutive Mono', monospace;
+/*	letter-spacing: 1px; */
+	font-size: 25px;
 	color:black;
-	padding-left: 12px;
+	padding-left: 18px;
 }
 
+button.navbar-toggler.ml-auto.collapsed, button.navbar-toggler.ml-auto {
+    padding-left: 18px;
+    padding-right:8px;
+}
 .ml-auto {
     margin-left: 0!important;
 }
@@ -78,6 +82,9 @@ span.greyer a {
     color: #565656;
 }
 
+.footFont{
+    font-size: smaller;
+}
 .carousel .carousel-item img {
 /*   min-height: 457px; */
   min-width: auto;
@@ -124,7 +131,7 @@ span.greyer a {
 	font-weight:600;
 }
 .paragraph {
-	padding: 30px;
+	padding: 10px;
 }
 
 .navbar-dark .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
@@ -141,6 +148,29 @@ body {
 ul li a {
     color: #565656;
 }
+
+/* Breadcrumbs */
+
+.dark-font .breadcrumb-item + .breadcrumb-item::before {
+    color: #000000; 
+    }
+.navbar .breadcrumb .breadcrumb-item.active {
+    color: #5f6086; 
+    }
+.crumbs {
+    padding-left: 5px;
+    font-size: smaller;
+}
+
+.narrow-results{display:none}
+
+.btn-primary {
+background-color:#f7f7f7!important;
+    color: #000!important;
+}
+
+
+
 
 @media (min-width: 767px) { 
 	.left {
@@ -182,7 +212,7 @@ ul li a {
 	min-width: auto;
 	}
     .elena {
-	font-family: 'CutiveMono-Regular', serif;
+	font-family: 'Cutive Mono', monospace;
 	letter-spacing: 4px;
 	font-size: 40px;
 	color:black;
@@ -194,6 +224,24 @@ ul li a {
     .navbar-brand {
     margin-right: 1rem; 
     }
+    
+    .footFont{
+    font-size: inherit;
+    }
+    .crumbs {
+        padding-left:50px;
+        font-size: inherit;
+    }
+    
+    .collapse.dont-collapse-sm {
+    display: block;
+    height: auto !important;
+    visibility: visible;
+    }    
+    
+    .narrow-results{display:block}
+    
+    
 }
 
 
