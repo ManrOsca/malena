@@ -3,121 +3,109 @@
 <html lang="en">
 
 	<head>
+
+
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>elena garcía-juan</title>
-		<!-- Font Awesome -->
+		<title>Elena García-Juan</title>
+
 		<link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto+Condensed" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet"> 
-		
+		<!-- Font Awesome -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+
 		<!-- Material Design Bootstrap -->
 		<link href="css/mdb.min.css" rel="stylesheet">
-		<!-- Your custom styles (optional) -->
 
-		<link rel="stylesheet" href="css/style.css">
-<script>
+		<!-- Your custom styles (optional) -->
+		<link href="css/style.css" rel="stylesheet">
+
+		<script>
 function validateForm() {
-    var name =  document.getElementById('name').value;
-    if (name == "") {
-        document.getElementById('status').innerHTML = "Name cannot be empty";
-        return false;
-    }
-    var email =  document.getElementById('email').value;
-    if (email == "") {
-        document.getElementById('status').innerHTML = "Email cannot be empty";
-        return false;
-    } else {
-        var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        if(!re.test(email)){
-            document.getElementById('status').innerHTML = "Email format invalid";
-            return false;
-        }
-    }
-    var subject =  document.getElementById('subject').value;
-    if (subject == "") {
-        document.getElementById('status').innerHTML = "Subject cannot be empty";
-        return false;
-    }
-    var message =  document.getElementById('message').value;
-    if (message == "") {
-        document.getElementById('status').innerHTML = "Message cannot be empty";
-        return false;
-    }
-    document.getElementById('status').innerHTML = "Sending...";
-    document.getElementById('contact-form').submit();
+	var name =  document.getElementById('name').value;
+	if (name == "") {
+		document.getElementById('status').innerHTML = "Name cannot be empty";
+		return false;
+	}
+	var email =  document.getElementById('email').value;
+	if (email == "") {
+		document.getElementById('status').innerHTML = "Email cannot be empty";
+		return false;
+	} else {
+		var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		if(!re.test(email)){
+			document.getElementById('status').innerHTML = "Email format invalid";
+			return false;
+		}
+	}
+	var subject =  document.getElementById('subject').value;
+	if (subject == "") {
+		document.getElementById('status').innerHTML = "Subject cannot be empty";
+		return false;
+	}
+	var message =  document.getElementById('message').value;
+	if (message == "") {
+		document.getElementById('status').innerHTML = "Message cannot be empty";
+		return false;
+	}
+	document.getElementById('status').innerHTML = "Sending...";
+	document.getElementById('contact-form').submit();
 
 }
-</script>
+		</script>
 	</head>
 
-	<body>
+	<body class="container-fluid">
 
 		<!--    Header-->
 		<header class="fixed-top">
-			<!--Navbar-->
-			<nav class="navbar navbar-expand-lg navbar-light menuText">
 
-            <div>
-            <div class="row">
-				<!-- Navbar brand -->
-				<a class="navbar-brand paddingElena" href="index.html#home"><span class="elena">elena garcía-juan</span></a>
 
-				<!-- Collapse button -->
 
-				<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+			<!-- Navigation -->
+			<nav class="navbar navbar-expand-lg navbar-light minWidth">
+				<a class="navbar-brand elena" href="index.html#home">elena garcía-juan</a>
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 
-				<!-- Collapsible content -->
-				<div class="collapse navbar-collapse justify-content-end" id="basicExampleNav">
-
-					<!-- Links -->
-					<!--        <ul class="navbar-nav">  -->
-					<ul class="nav grey lighten-4 py-4">
-						<li class="nav-item active">
+				<div class="collapse navbar-collapse pull-right" id="navbarSupportedContent">
+					<ul class="nav navbar-nav ml-auto">
+						<li class="nav-item">
 							<a class="nav-link" href="#">BIO </a>
 						</li>
-
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
-							<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								PROJECTS
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="bocaCielo.html#bocaCielo">Boca del Cielo</a>
-								<a class="dropdown-item" href="#">Vora Riu </a>
+								<a class="dropdown-item" href="#">Vora Riu</a>
 								<a class="dropdown-item" href="#">La Marina</a>
-								<a class="dropdown-item" href="#">Keep going</a>                    
-								<a class="dropdown-item" href="#">Solo de Ida</a>                    
-								<a class="dropdown-item" href="#">Aish</a>            
-								<a class="dropdown-item" href="#">Hola  Elena</a>                    
+								<a class="dropdown-item" href="#">Keep Going</a>
+								<a class="dropdown-item" href="#">Solo de Ida</a>
+								<a class="dropdown-item" href="#">Aish</a>
+								<a class="dropdown-item" href="#">Hola Elena</a>
 							</div>
-						</li>            
-
-
+						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">WORK</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="contact.html#contact">CONTACT
-								<span class="sr-only">(current)</span>
-							</a>
+							<a class="nav-link" href="contact.html#contact">CONTACT<span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">ES</a>
-						</li>
-
-						<!-- Dropdown -->
-
 					</ul>
-					<!-- Links -->
-
 				</div>
-				<!-- Collapsible content -->
-				</div>            
-				        <!-- Breadcrumbs -->
+			</nav>
+
             <div class="row crumbs">
                 <div class="dark-font">
                 <!--
@@ -129,135 +117,131 @@ function validateForm() {
                         <li class="breadcrumb-item active">Projects</li>
                     </ol>        -->
                     <ol class="breadcrumb">
-<!--                        <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li>
-						<li class="breadcrumb-item"><a class="black-text" href="#">Projects</a></li>  -->
-                        <li class="breadcrumb-item active">Contact</li>
+<!--                    <li class="breadcrumb-item"><a class="black-text" href="#">Home</a></li> -->
+                        <li class="breadcrumb-item"><a class="black-text" href="#">Contact</a></li>
+                        <!-- <li class="breadcrumb-item active">Boca de Cielo</li> -->
                     </ol>
 
                 </div>
-
             </div> 
-            </div>    
-			</nav>
-			<!--/.Navbar-->        
-
 		</header>
+
 
 		<!--    Main -->
 		<Main>
 		<span class="anchor" id="contact"></span>
 
-		<div class="padTop">
-   
-        </div>
-	
-		<br><br><br>
-<!--Section: Contact v.2-->
-	
-<div class="card card-body centrePad">
+		<!-- <div class="padTop"> -->
 
-<section class="section">
+		<!-- </div> -->
 
-    <!--Section heading-->
-    <h2 class="card-title h1-responsive font-weight-bold text-center my-5">Contact me</h2>
-    <!--Section description-->
-    <p class="card-text text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. </p>
+		<!--Section: Contact v.2-->
 
-    <div class="row">
+		<div class="card card-body centrePad noShadow">
 
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+			<section class="section">
 
-                <!--Grid row-->
-                <div class="row">
+				<!--Section heading-->
+				<h2 class="card-title h1-responsive font-weight-bold text-center my-5">Contact me</h2>
+				<!--Section description-->
+				<p class="card-text text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact me directly. </p>
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
+				<div class="row">
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
+					<!--Grid column-->
+					<div class="col-md-9 mb-md-0 mb-5">
+						<form id="contact-form" name="contact-form" action="mail.php" method="POST">
 
-                </div>
-                <!--Grid row-->
+							<!--Grid row-->
+							<div class="row">
 
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
+								<!--Grid column-->
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<input type="text" id="name" name="name" class="form-control">
+										<label for="name" class="">Your name</label>
+									</div>
+								</div>
+								<!--Grid column-->
 
-                <!--Grid row-->
-                <div class="row">
+								<!--Grid column-->
+								<div class="col-md-6">
+									<div class="md-form mb-0">
+										<input type="text" id="email" name="email" class="form-control">
+										<label for="email" class="">Your email</label>
+									</div>
+								</div>
+								<!--Grid column-->
 
-                    <!--Grid column-->
-                    <div class="col-md-12">
+							</div>
+							<!--Grid row-->
 
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
+							<!--Grid row-->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="md-form mb-0">
+										<input type="text" id="subject" name="subject" class="form-control">
+										<label for="subject" class="">Subject</label>
+									</div>
+								</div>
+							</div>
+							<!--Grid row-->
 
-                    </div>
-                </div>
-                <!--Grid row-->
+							<!--Grid row-->
+							<div class="row">
 
-            </form>
+								<!--Grid column-->
+								<div class="col-md-12">
 
-            <div class="text-center text-md-left">
-				<a class="btn btn-primary" onclick="validateForm()">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
+									<div class="md-form">
+										<textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+										<label for="message">Your message</label>
+									</div>
 
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fa fa-map-marker fa-2x"></i>
-                    <p>123 Street, Maidenhead, MD8 7GD, UK</p>
-                </li>
+								</div>
+							</div>
+							<!--Grid row-->
 
-                <li><i class="fa fa-phone mt-4 fa-2x"></i>
-                    <p>+44 01 234 567 89</p>
-                </li>
+						</form>
 
-                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                    <p>info@malenajuan.com</p>
-                </li>
-            </ul>
-        </div>
-        <!--Grid column-->
+						<div class="text-center text-md-left">
+							<a class="btn btn-primary" onclick="validateForm()">Send</a>
+						</div>
+						<div class="status"></div>
+					</div>
+					<!--Grid column-->
 
-    </div>
+					<!--Grid column-->
+					<div class="col-md-3 text-center">
+						<ul class="list-unstyled mb-0">
+<br />
+							<li><a href="mailto:info@malenajuan.com?Subject=Web%20enquiry" target="_top" data-toggle="tooltip" title="info@malenajuan.com" ><i class="fa fa-envelope mt-4 fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+<br /><br />
+							<li><a href="https://www.facebook.com/Elena-Garcia-Juan-470151339781200/"  data-toggle="tooltip" title="Facebook" ><i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+								</a>
+							</li>
+<br /><br />
+							<li><a href="https://www.instagram.com/juan.malena/"  data-toggle="tooltip" title="Instagram" ><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>	
+							</li>
 
-</section>
-<!--Section: Contact v.2-->
-</div>
+						</ul>
+					</div>
+					<!--Grid column-->
+
+				</div>
+
+			</section>
+			<!--Section: Contact v.2-->
+		</div>
 
 
 
 		</Main>
 
 		<!--   Footer -->
-		
+
 		<!-- Footer -->
 
 		<!-- SCRIPTS -->

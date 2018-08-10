@@ -1,9 +1,18 @@
 html,
 body {
     background-color: #fff;
+
 }
 
- header.fixed-top {
+.minWidth { 
+	min-width:394px;
+	width:auto!important;
+	width:394px;
+	/* width: calc( 100vw - 5px ); */
+}
+
+
+header.fixed-top {
 	background-color:#fff;
 } 
 
@@ -65,9 +74,10 @@ span.greyer a {
 .elena {
 	font-family: 'Cutive Mono', monospace;
 /*	letter-spacing: 1px; */
-	font-size: 25px;
+	font-size: 30px;
 	color:black;
-	padding-left: 35px;
+	padding-left: 15px;
+	font-weight: 900;
 }
 
 .paddingElena {
@@ -92,6 +102,7 @@ button.navbar-toggler.ml-auto.collapsed, button.navbar-toggler.ml-auto {
 .carousel .carousel-item img {
     min-height: 100%;
     min-width: auto;
+	object-fit:contain;
 }
 
 .grey.lighten-4 {
@@ -110,18 +121,18 @@ button.navbar-toggler.ml-auto.collapsed, button.navbar-toggler.ml-auto {
 
 .anchor{
    display:block;
-   height:60px; /* this is the height of the header */
+   height:100px; /* this is the height of the header */
    margin-top:-40px; /* this is again negative value of the height of the header 
    visibility:hidden; */
 }
 .adjustPad {
-	padding: 14px 0px 30px 0px;;
+	padding: 0px 0px 30px 0px;;
 	height : 264px;
 	width:auto;
 }
 
 .padTop {
-	padding-top:60px;
+	padding-top:90px;
 	}
 
 .navbar-brand {
@@ -169,10 +180,16 @@ ul li a {
     color: #5f6086; 
     }
 .crumbs {
-    padding-left: 20px;
+    padding-left: 18px;
     font-size: smaller;
-}
+	 /* padding-top:60px; */ 
+	}
 
+.breadcrumb {
+	background-color:#fff;
+	padding: 0 1rem;
+	}
+    
 .narrow-results{display:none}
 
 .btn-primary {
@@ -181,7 +198,7 @@ background-color:#f7f7f7!important;
 }
 
 .paddingNav {
- padding-top: 120px;
+ padding-top: 60px;
 }
 
 /* Otro collapse  */
@@ -219,10 +236,29 @@ background-color:#f7f7f7!important;
 .carousel .carousel-control-next-icon {
     background-image: url(../img/svg/arrow_right.svg);
 }
-/* Otro collapse  */
+
+.noShadow {
+	box-shadow:none;
+}
+nav-link {
+	padding-left: 0.5rem;
+}
+.nav-link:hover .dropdown-item:hover { color: #b60ae7 !important; } 
+a:hover { color: #b60ae7 !important; } 
+
+.navbar .dropdown-menu a {
+	background-color:#fff;
+	}
+
+.dropdown-menu a:hover {
+	color:#b60ae7;;
+	}
+
+/* -------------------------------------------- */
 
 
-@media (min-width: 767px) { 
+/* 767 */
+@media (min-width: 992px) { 
 	.left {
 	text-align:left;
 	}
@@ -237,37 +273,38 @@ background-color:#f7f7f7!important;
 	padding:0 50px;
 	}
 	header.fixed-top {
-	padding: 0 100px;
+	padding: 0 50px;
 	}
 	.navbar {
 	padding: .5rem 1rem;
 	}
 	.anchor{
 	display:block;
-	height:104px; /* this is the height of the header */
-	margin-top:-104px; /* this is again negative value of the height of the header 
+	height:200px; /* this is the height of the header */
+	margin-top:-100px; /* this is again negative value of the height of the header 
 	visibility:hidden;  */
 	}
 	.adjustPad {
-	padding: 0;
+	padding-top: 0px;
     height:inherit;
 	}
 	.centrePad{
     width: 60%;
 	}
 	.padTop {
-	padding-top:104px;
+	padding-top:150px;
 	}
 	.carousel .carousel-item img {
-	min-height: 457px; 
+	/* min-height: 457px; */ 
 	min-width: auto;
+	object-fit:contain:
 	}
     .elena {
 	font-family: 'Cutive Mono', monospace;
-	letter-spacing: 4px;
-	font-size: 40px;
+	letter-spacing: 1px;
+	font-size: 45px;
 	color:black;
-	padding-left: 60px;
+	padding-left: 20px;
     }
     
     
@@ -278,6 +315,7 @@ background-color:#f7f7f7!important;
     
     .ml-auto {
     margin-left: auto!important;
+	padding-right:20px;
     }
     .navbar-brand {
     margin-right: 1rem; 
@@ -287,9 +325,14 @@ background-color:#f7f7f7!important;
     font-size: inherit;
     }
     .crumbs {
-        padding-left:50px;
+        padding-left:40px;
         font-size: inherit;
+		/* padding-top:80px; */ 
     }
+	.breadcrumb {
+	background-color:#fff;
+	padding-top:10px;
+	}
     
     .collapse.dont-collapse-sm {
     display: block;
@@ -308,9 +351,31 @@ background-color:#f7f7f7!important;
     }
     
     .paddingNav {
-    padding-top: 160px;
+    padding-top: 0px;
     }
     
+	a.nav-link {
+	padding: 0 1rem;
+	}
+
+	.nav-link:hover .dropdown-item:hover { color: #b60ae7 !important; } 
+
+	a:hover { color: #b60ae7 !important; } 
+
+	.navbar .dropdown-menu a {
+    /* padding: 10px; */
+	background-color:#fff;
+    /* font-size: .9375rem; */
+    /* font-weight: 300; */
+    /* color: #000 !important; */
+	}
+
+	.dropdown-menu a:hover {
+	color:#b60ae7;;
+	}
+
+
+
 }
 
 
