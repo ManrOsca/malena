@@ -43,7 +43,7 @@ header.fixed-top {
 }
 
 div img {
-    width:100%;
+    /* width:100%; */
 }
 
 footer.page-footer {
@@ -277,13 +277,13 @@ a:hover { color: #03c4eb !important; }
 	}
 
 
-/*	#self {
-	width:250px;
+	#self {
+	/* width:250px; */
 	position:fixed;
-	left:180px;
-	display:none; 
+	/* left:180px; */
+	/* display:none; */ 
 	}	
-*/
+
 
 /* -------------------------------------------- */
 
@@ -430,26 +430,14 @@ a:hover { color: #03c4eb !important; }
 	border:none;
 	}
 
-/*
 	#self {
-	 width:250px; 
-	 height:357px; 
-	 background-color:grey; 
-	  background-image:url(../img/ElenaBIO250x357.jpg); 
-	  background-repeat:no-repeat; 
-	  background-position: center center; 
-	  padding:30px; 
-	width:250px;
 	position:fixed;
-	 transform: translateX(50%); 
-	left:180px;
-	display:block; 
 	}	
 
 	.rightText{
 	padding-right:30px;
 	}
-*/
+
 	/* img { */
     /* height: auto; */
     /* max-width: 100%; */
