@@ -1,10 +1,11 @@
 html,
 body {
     background-color: #fff;
+
 }
 
 .minWidth { 
-	min-width:304px;
+	min-width:394px;
 	width:auto!important;
 	width:394px;
 	/* width: calc( 100vw - 5px ); */
@@ -13,11 +14,6 @@ body {
 
 header.fixed-top {
 	background-color:#fff;
-	padding: 0 20px;
-	position:fixed;	 
-
-	
-
 } 
 
 .navbar.navbar-default {
@@ -47,7 +43,7 @@ header.fixed-top {
 }
 
 div img {
-  /*  width:100%; */
+    /* width:100%; */
 }
 
 footer.page-footer {
@@ -80,7 +76,7 @@ span.greyer a {
 /*	letter-spacing: 1px; */
 	font-size: 30px;
 	color:black;
-	/* padding-left: 15px; */
+	padding-left: 15px;
 	font-weight: 900;
 }
 
@@ -92,15 +88,8 @@ button.navbar-toggler.ml-auto.collapsed, button.navbar-toggler.ml-auto {
     padding-left: 18px;
     padding-right:8px;
 }
-
-.navbar-toggler {
-    padding: .75rem .75rem;
-}
-
-
 .ml-auto {
-    margin-left: auto!important;
-    /* margin-left: 0!important; */
+    margin-left: 0!important;
 }
 
 .navbar-dark .navbar-brand {
@@ -248,13 +237,6 @@ background-color:#f7f7f7!important;
     background-image: url(../img/svg/arrow_right.svg);
 }
 
-.carousel .carousel-grey-prev-icon {
-    background-image: url(../img/svg/arrow_left.png);
-}
-.carousel .carousel-grey-next-icon {
-    background-image: url(../img/svg/arrow_right.png);
-}
-
 .noShadow {
 	box-shadow:none;
 }
@@ -295,29 +277,19 @@ a:hover { color: #03c4eb !important; }
 	}
 
 
-/*	#self {
-	width:250px;
+	#self {
+	/* width:250px; */
 	position:fixed;
-	left:180px;
-	display:none; 
+	/* left:180px; */
+	/* display:none; */ 
 	}	
-*/
-
-/* ----------------- xs --------------------------- */
-
-/* ----------------- md --------------------------- */
-
-/* ----------------- lg --------------------------- */
 
 
-/* 767 ----------------- xl ------------------- 992 */
-@media (min-width: 1101px) { 
-    
-     body{
-        /* background-color: orange; */
-        transition: ease  1s;
-    }
-    
+/* -------------------------------------------- */
+
+
+/* 767  992 */
+@media (min-width: 992px) { 
 	.left {
 	text-align:left;
 	}
@@ -333,7 +305,6 @@ a:hover { color: #03c4eb !important; }
 	}
 	header.fixed-top {
 	padding: 0 50px;
-	position:fixed;
 	}
 	.navbar {
 	padding: .5rem 1rem;
@@ -364,7 +335,7 @@ a:hover { color: #03c4eb !important; }
 	letter-spacing: 1px;
 	font-size: 45px;
 	color:black;
-	/* padding-left: 20px; */
+	padding-left: 20px;
     }
     
     
@@ -375,7 +346,7 @@ a:hover { color: #03c4eb !important; }
     
     .ml-auto {
     margin-left: auto!important;
-	padding-top:20px;
+	padding-right:20px;
     }
     .navbar-brand {
     margin-right: 1rem; 
@@ -459,74 +430,71 @@ a:hover { color: #03c4eb !important; }
 	border:none;
 	}
 
-}
+	#self {
+	position:fixed;
+	}	
 
-
-
-@media (max-width: 400px) {
-    body{
-        /* background-color: yellow; */
-        transition: ease  1s;
-    }
-    .elena {
-	font-family: 'Cutive Mono', monospace;
-	letter-spacing: 0.5px;
-	font-size: 23px;
-	color:black;
-	/* padding-left: 14px; */
-    }
-    .navbar{
-    align-items: flex-start;
-    }
-	.adjustFont {
-	font-size:smaller;
+	.rightText{
+	padding-right:30px;
 	}
-	.ml-auto {
-    margin-left: auto!important;
-    padding-top: 20px;
+
+	/* img { */
+    /* height: auto; */
+    /* max-width: 100%; */
+    /* vertical-align: middle; */
+	/* } */
+
+
+ /*@media screen and (max-width: 990px) and (min-width: 767px) {
+	.container-fluid.row.d-none {
+	width:70%;
+	text-align:center;
 	}
-}
+*/
 
-@media (min-width: 401px) and (max-width: 800px){
-    body { 
-        /* background-color: blue; */
-        transition: ease  1s;
-    }
-    .elena {
-	font-family: 'Cutive Mono', monospace;
-	letter-spacing: 1px;
-	font-size: 28px;
-	color:black;
-	/* padding-left: 20px; */
-    }
-    .navbar{
-    align-items: flex-start;
-    }    
-	.ml-auto {
-    margin-left: auto!important;
-    padding-top: 20px;
-	} 
-}
-
-@media (min-width: 801px) and (max-width: 1100px) { 
-	body { 
-    /* background-color: purple; */
-    transition: ease  1s;
-    }
-    .elena {
-	font-family: 'Cutive Mono', monospace;
-	letter-spacing: 1px;
-	font-size: 40px;
-	color:black;
-	/* padding-left: 20px; */
-    }
-    .navbar{
-    align-items: flex-start;
-    }
-	.ml-auto {
-    margin-left: auto!important;
-    padding-top: 20px;
-	}
 }
 
 
+
+
+
+/* To change the next/previous icons */
+/*
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 30px;
+  color: red;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: red;
+}
+*/
+/*
+.elenCar {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-control.prev {
+  margin-left: -25px;
+}
+
+.carousel-control.next {
+  margin-right: -25px;
+}
+*/
