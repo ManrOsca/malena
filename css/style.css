@@ -1,6 +1,8 @@
 html,
 body {
     background-color: #fff;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: grey;
 }
 
 .minWidth { 
@@ -133,7 +135,7 @@ button.navbar-toggler.ml-auto.collapsed, button.navbar-toggler.ml-auto {
 .anchor{
    display:block;
    height:100px; /* this is the height of the header */
-   margin-top:-40px; /* this is again negative value of the height of the header 
+   margin-top:-80px; /* this is again negative value of the height of the header 
    visibility:hidden; */
 }
 .adjustPad {
@@ -191,7 +193,8 @@ ul li a {
     color: #5f6086; 
     }
 .crumbs {
-    padding-left: 18px;
+    padding-left: 5px;
+    /* padding-left: 18px; */
     font-size: smaller;
 	 /* padding-top:60px; */ 
 	}
@@ -262,7 +265,8 @@ nav-link {
 	padding-left: 0.5rem;
 }
 .nav-link:hover .dropdown-item:hover { color: #03c4eb !important; } 
-a:hover { color: #03c4eb !important; } 
+
+a:hover { color:#03c4eb !important; } 
 
 .navbar .dropdown-menu a {
 	background-color:#fff;
@@ -287,22 +291,33 @@ a:hover { color: #03c4eb !important; }
 	}
 
 	.navbar .dropdown-menu a {
-	padding:0 20px;
+	padding:0;
 	}
 
 	.dropdown-menu {
 	border:none;
 	}
 
+.navbar .nav-item .nav-link {
+	padding-left:0;
+}
 
-/*	#self {
+.navbar .dropdown-menu a:hover {
+	color:#03c4eb !important; 
+	}
+
+a:hover { color:#03c4eb !important; } 
+
+#self {
 	width:250px;
 	position:fixed;
-	left:180px;
-	display:none; 
+	/* left:180px; */
+	/* display:none; */ 
 	}	
-*/
 
+.container, .container-fluid {
+    padding-top: 20px;
+}
 /* ----------------- xs --------------------------- */
 
 /* ----------------- md --------------------------- */
@@ -336,12 +351,12 @@ a:hover { color: #03c4eb !important; }
 	position:fixed;
 	}
 	.navbar {
-	padding: .5rem 1rem;
+	padding: 0rem 1rem;
 	}
 	.anchor{
 	display:block;
-	height:140px; /* this is the height of the header */
-	margin-top:-100px; /* this is again negative value of the height of the header 
+	height:120px; /* this is the height of the header */
+	margin-top:-120px; /* this is again negative value of the height of the header 
 	visibility:hidden;  */
 	}
 	.adjustPad {
@@ -367,7 +382,10 @@ a:hover { color: #03c4eb !important; }
 	/* padding-left: 20px; */
     }
     
-    
+	.navbar .dropdown-menu a:hover {
+	color:#03c4eb !important; 
+	}
+
     .paddingElena {
     padding-top: inherit;
     }
@@ -385,7 +403,7 @@ a:hover { color: #03c4eb !important; }
     font-size: inherit;
     }
     .crumbs {
-        padding-left:40px;
+        padding-left:23px;
         font-size: inherit;
 		/* padding-top:80px; */ 
     }
@@ -420,7 +438,7 @@ a:hover { color: #03c4eb !important; }
 
 	.nav-link:hover .dropdown-item:hover { color: #03c4eb !important; } 
 
-	a:hover { color: #03c4eb !important; } 
+	a:hover { color:#03c4eb !important; } 
 
 	.navbar .dropdown-menu a {
     /* padding: 10px; */
@@ -431,7 +449,7 @@ a:hover { color: #03c4eb !important; }
 	}
 
 	.dropdown-menu a:hover {
-	color:#03c4eb;;
+	color:#03c4eb;
 	}
 
 	a {
@@ -452,7 +470,7 @@ a:hover { color: #03c4eb !important; }
 	}
 
 	.navbar .dropdown-menu a {
-	padding:0 20px;
+	padding:0;
 	}
 
 	.dropdown-menu {
