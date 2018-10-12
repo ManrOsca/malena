@@ -327,6 +327,18 @@ a:hover { color:#03c4eb !important; }
 
 
 /* 767 ----------------- xl ------------------- 992 */
+
+
+
+
+
+
+
+.logo {
+	text-align: center;
+    flex-grow: 1;
+}
+
 @media (min-width: 1101px) {
     
      body{
